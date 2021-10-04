@@ -13,7 +13,7 @@ posts = [
 {
     'title':'Python',
     'users':{'name':'Nico lopez',
-    'picture': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDGKhWzXmC26Sjj7A_e8nmBx99A1exlYEI-w&usqp=CAU'
+    'picture': '/imagenes/icono.jpg'
         },
         'timestamp':datetime.now().strftime('%b %d %dth, %Y - %H:%M hrs'),
          'photo':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc5L89-K9Hb44e-4w2RutP91Tcv4Og8BiPQ&usqp=CAU'
@@ -22,7 +22,7 @@ posts = [
 {
     'title':'Python',
     'users':{'name':'Jose Barrera',
-    'picture': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDGKhWzXmC26Sjj7A_e8nmBx99A1exlYEI-w&usqp=CAU'
+    'picture':  ''
         },
         'timestamp':datetime.now().strftime('%b %d %dth, %Y - %H:%M hrs'),
          'photo':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc5L89-K9Hb44e-4w2RutP91Tcv4Og8BiPQ&usqp=CAU'
@@ -31,7 +31,7 @@ posts = [
 {
     'title':'Python',
     'users':{'name':'Alvaro De La Rosa',
-    'picture': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDGKhWzXmC26Sjj7A_e8nmBx99A1exlYEI-w&usqp=CAU'
+    'picture': '..//imagenes/icono.jpg'
         },
         'timestamp':datetime.now().strftime('%b %d %dth, %Y - %H:%M hrs'),
          'photo':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc5L89-K9Hb44e-4w2RutP91Tcv4Og8BiPQ&usqp=CAU'
@@ -40,7 +40,7 @@ posts = [
 {
     'title':'Python',
     'users':{'name':'Facundo Chacon',
-    'picture': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDGKhWzXmC26Sjj7A_e8nmBx99A1exlYEI-w&usqp=CAU'
+    'picture':  '/imagenes/icono.jpg'
         },
         'timestamp':datetime.now().strftime('%b %d %dth, %Y - %H:%M hrs'),
          'photo':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc5L89-K9Hb44e-4w2RutP91Tcv4Og8BiPQ&usqp=CAU'
