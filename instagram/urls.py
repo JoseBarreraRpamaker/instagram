@@ -23,5 +23,9 @@ from instagram import views
 
 urlpatterns = [
   #  path('admin/', admin.site.urls),
-    path('holamundo/',views.hello)
+    path('holamundo/',views.hello),
+    path('hi/',views.hi),
+    path('welcome/<str:name>/<int:age>/',views.say_hi)
+    
+    
 ]
