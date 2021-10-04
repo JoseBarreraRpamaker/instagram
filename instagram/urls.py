@@ -16,16 +16,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
-from instagram import views
+from instagram import views as local_views
+from posts import views as posts_views
 
 
 
 
 urlpatterns = [
   #  path('admin/', admin.site.urls),
-    path('holamundo/',views.hello),
-    path('hi/',views.hi),
-    path('welcome/<str:name>/<int:age>/',views.say_hi)
+    path('holamundo/',local_views.hello),
+    path('hi/',local_views.hi),
+    path('welcome/<str:name>/<int:age>/',local_views.say_hi),
+
+    path('posts/',posts_views.list_posts)
+
+    
     
     
 ]
