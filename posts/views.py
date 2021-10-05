@@ -11,39 +11,39 @@ import posts
 posts = [
 
 {
-    'title':'Python',
+    'title':'Python Django',
     'users':{'name':'Nico lopez',
-    'picture': '/imagenes/icono.jpg'
+    'picture': './/imagenes/icono.jpg'
         },
         'timestamp':datetime.now().strftime('%b %d %dth, %Y - %H:%M hrs'),
-         'photo':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc5L89-K9Hb44e-4w2RutP91Tcv4Og8BiPQ&usqp=CAU'
+         'photo':'https://techgenies.com/wp-content/uploads/2021/04/python-django-techgenies-bolsa-de-trabajo.jpg'
 
 },
 {
-    'title':'Python',
+    'title':'Estudiando Python',
     'users':{'name':'Jose Barrera',
     'picture':  ''
         },
         'timestamp':datetime.now().strftime('%b %d %dth, %Y - %H:%M hrs'),
-         'photo':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc5L89-K9Hb44e-4w2RutP91Tcv4Og8BiPQ&usqp=CAU'
+         'photo':'https://www.becas-santander.com/content/dam/becasmicrosites/blog/lenguaje-programacion.jpeg'
 
 },
 {
-    'title':'Python',
+    'title':'GeneXus',
     'users':{'name':'Alvaro De La Rosa',
     'picture': '..//imagenes/icono.jpg'
         },
         'timestamp':datetime.now().strftime('%b %d %dth, %Y - %H:%M hrs'),
-         'photo':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc5L89-K9Hb44e-4w2RutP91Tcv4Og8BiPQ&usqp=CAU'
+         'photo':'https://pbs.twimg.com/profile_images/1318526866307821568/hjWN2taM.jpg'
 
 },
 {
-    'title':'Python',
+    'title':'C#',
     'users':{'name':'Facundo Chacon',
     'picture':  '/imagenes/icono.jpg'
         },
         'timestamp':datetime.now().strftime('%b %d %dth, %Y - %H:%M hrs'),
-         'photo':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc5L89-K9Hb44e-4w2RutP91Tcv4Og8BiPQ&usqp=CAU'
+         'photo':'https://aspnetcoremaster.com/img/csharp.webp'
 
 },
 ]
