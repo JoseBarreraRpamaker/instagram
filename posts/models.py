@@ -10,6 +10,8 @@ class Users(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
 
+    is_admin = models.BooleanField(default=False)
+
     bio = models.TextField(blank=True)   # blank puede estar vacio el campo.
 
     birthdat = models.DateField(blank=True,null=True)
