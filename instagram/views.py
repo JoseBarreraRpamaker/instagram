@@ -1,23 +1,36 @@
-from django.urls import path
 from django.http import HttpResponse
+
+
 from datetime import datetime
-
-from django.urls.converters import register_converter
-
+import json
 
 
-def hello(Request):
-    now = datetime.now().strftime('%b,%dth,%Y - %H:%M hors')
-    return HttpResponse('hola la fecha de hoy es {now}'.format(now=str(now)))
+def hello_world(request):
+    
+    return HttpResponse('Oh, hi! Current server time is {now}'.format(
+        now=datetime.now().strftime('%b %dth, %Y - %H:%M hrs')
+    ))
 
 
-def hi(Request):
-    return HttpResponse('hola como estan')    
+def sort_integers(request):
+    
+    numbers = [int(i) for i in request.GET['numbers'].split(',')]
+    sorted_ints = sorted(numbers)
+    data = {
+        'status': 'ok',
+        'numbers': sorted_ints,
+        'message': 'Integers sorted successfully.'
+    }
+    return HttpResponse(
+        json.dumps(data, indent=4),
+        content_type='application/json'
+    )
 
 
-def say_hi(Request,name,age):
+def say_hi(request, name, age):
+ 
     if age < 12:
-        message = 'sorry {}, la edad deve de ser mayor a 12'.format(name)
+        message = 'Sorry {}, you are not allowed here'.format(name)
     else:
-        message = 'hola {}, Welcome to isnta'.format(name) 
-    return HttpResponse(message)    
+        message = 'Hello, {}! Welcome to instagram'.format(name)
+    return HttpResponse(message)
