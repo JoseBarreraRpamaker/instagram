@@ -1,22 +1,21 @@
+from django.contrib.auth.models import User
 from django.db import models
+from django.db.models.base import Model
+from django.contrib.auth.models import User
 
+
+from users.models import Profile
 # Create your models here.
 
-class Users(models.Model):
+class Post(models.Model):
 
-    email = models.EmailField(unique=True)
-    password = models.CharField(max_length=100)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    profile = models.ForeignKey(Profile,on_delete=models.CASCADE)
+    title = models.CharField(max_length=255)
+    photo = models.ImageField(upload_to='posts/photos')
 
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
+    created = models.DateField(auto_now_add=True)
+    modified = models.DateField(auto_now=True)
 
-    is_admin = models.BooleanField(default=False)
-
-    bio = models.TextField(blank=True)   # blank puede estar vacio el campo.
-
-    birthdat = models.DateField(blank=True,null=True)
-
-    created = models.DateTimeField(auto_now_add=True)
-    modified = models.DateTimeField(auto_now=True)
 
 
